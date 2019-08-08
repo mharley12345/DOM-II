@@ -5,11 +5,15 @@ const wordColor = document.querySelector('body')
 let mouseOver1 = document.querySelector(".nav"); 
 let keyDown1 = document.querySelector("body"); 
 let wheel1 = document.querySelector("footer");
-let wheel2 = document.querySelector("body");                                              
+let wheel2 = document.querySelector("body");  
+let doubleClick = document.querySelector('.text-content')
+let button = document.querySelector('.btn') 
+let destination = document.querySelector('.destination')
+                                        
                                                                    
 
 //-------------------------------------------------------------- 
- //   Mose Over                                                 
+ //   Mouse Over                                                 
                                                                 
 mouseOver1.addEventListener("mouseover", event =>  {                  
                                                                       
@@ -53,7 +57,9 @@ wordColor.onclick = function() {
     wordColor.style.color = "";                                          
     body1.style.backgroundColor = "";                                    
      }, 30000);                                                          
-};                                                                      
+};  
+button.addEventListener('click',function(event){event.stopPro}
+)                                                                    
 //----------------------------------------------------------------------                
 //   Window Event                                                       
      window.addEventListener('load', (event) => {                       
@@ -64,7 +70,7 @@ wordColor.onclick = function() {
 //  Move Logo                                                         
                                                                       
 TweenMax.to(moveLogo, 5, {x:1220, y:4, scale:2, skewX:45, rotation:360});                                               
-                                                                                                        
+                                                                                                 
                                                                                                       
 // Set Timeout then move logo back to start                                                                                         
                                                                                                      
@@ -80,9 +86,18 @@ document.querySelector('a').addEventListener('click',function(event){
 });                                                                        
 //-------------------------------------------------------------------------------
                                 
+//    Double Click "Let's"
+doubleClick.addEventListener('dblclick',event=>{
+  alert(event.textContent='You Double Clicked')
+})                   
                           
-                          
-                                                                          
+destination.addEventListener('click',(event)=>{
+  alert(event.textContent="click")
+},
+button.addEventListener('click',(event)=>{
+ event.stopPropagation();
+  // alert(event.textContent='click')
+}))                                                                   
                                                                          
                                                                          
                                                                          
