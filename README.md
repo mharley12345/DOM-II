@@ -6,7 +6,7 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 
 **Follow these steps to set up and work on your project:**
 
-* [ ] Create a forked copy of this project.
+* [X] Create a forked copy of this project.
 * [ ] Add your project manager as collaborator on Github.
 * [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
 * [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
@@ -34,11 +34,11 @@ Fun Bus wants you to make their site more interactive. They are relying on you t
 ## Task 2: Create Unique Event Listeners
 
 * [ ] Using your [index.js file](js/index.js), create 10 [unique event listeners](https://developer.mozilla.org/en-US/docs/Web/Events). using your creativity to make the Fun Bus site more interactive.  Here are some unique events you could try to use: 
-	* [ ] `mouseover`
-	* [ ] `keydown`
-	* [ ] `wheel`
-	* [ ] `drag / drop`
-	* [ ] `load`
+	* [X] `mouseover`
+	* [X] `keydown`
+	* [] `wheel`
+	* [] `drag / drop`
+	* [X] `load`
 	* [ ] `focus`
 	* [ ] `resize`
 	* [ ] `scroll`
